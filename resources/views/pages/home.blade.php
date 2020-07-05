@@ -1,5 +1,8 @@
 @extends('layout.master');
 
+@section('title')
+        home
+@endsection
 @section('content')
 <section class="hero set-bg" data-setbg="img/hero-bg.jpg">
         <div class="container">
@@ -198,6 +201,20 @@
         </div>
     </section>
     <!-- Pricing Section End -->
-
+     <div class="container">
+     
+            <div class="row" >
+            @foreach ($posts as $post)
+              <div class="col-md-3 col-lg-6 col-lg-offset-4" >
+                    <h1>{{$post->title}}</h1>
+                    <p style="width:300px; height:300px;box-sizing:border-box; overflow:hidden">{{$post->description}}</p>
+                    <a href="{{ route('post.single', ['id' => $post->id]) }}" class= "btn btn-info">Read More</a>
+               </div>
+               @endforeach
+            
+            </div>
+      <br>
+     </div>
+     
     <!-- Team Section Begin -->
 @endsection

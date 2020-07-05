@@ -7,7 +7,7 @@
     <meta name="keywords" content="Dreams, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dreams | Template</title>
+    <title>@yield('title')</title>
 
     <!-- Google Font -->
     <link href="{{URL::asset('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap')}}" rel="stylesheet">
@@ -44,16 +44,18 @@
                 <li><a href="./courses">Courses</a></li>
                 <li class="active"><a href="#">Pages</a>
                     <ul class="dropdown">
-                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./about/yesabout">About</a></li>
                         <li><a href="./instructor.html">Instructor</a></li>
                         <li><a href="./pricing.html">Pricing</a></li>
                         <li><a href="./faq.html">FAQ</a></li>
                         <li><a href="./course-details.html">Course Details</a></li>
                         <li><a href="./blog-details.html">Blog Details</a></li>
+                        
                     </ul>
                 </li>
                 <li><a href="./blog.html">News</a></li>
                 <li><a href="./contact">Contact</a></li>
+                <li><a href="./admin">Admin</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -85,7 +87,7 @@
                             <li><a href="./courses">Courses</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./about/yes about">About</a></li>
                                     <li><a href="./instructor.html">Instructor</a></li>
                                     <li><a href="./pricing.html">Pricing</a></li>
                                     <li><a href="./faq.html">FAQ</a></li>
@@ -95,6 +97,7 @@
                             </li>
                             <li><a href="./news">News</a></li>
                             <li><a href="./contact">Contact</a></li>
+                            <li><a href="./admin">Admin</a></li>
                         </ul>
                     </nav>
                 </div>
